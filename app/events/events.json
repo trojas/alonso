@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Commander Run- 5K, Extreme 5K, Mini- Extreme", 
+        "location_name": "Friendship Christian School", 
+        "date": "Apr 12, 2014",
+        "city": "Lebanon",
+        "state": "TN",
+        "tags": "Running [5K]",
+        "description": "The Commander Run Series was created with the goal to challenge athletes of any age or ability by offering three unique runs: The Extreme 5K, The Mini-Extreme, and The Cross-Country 5K."
+    }, 
+    {
+        "name": "Pride 10K / 5K Run & 5K Walk", 
+        "location_name": "Central Phoenix", 
+        "date": "Apr 05, 2014",
+        "city": "Phoenix",
+        "state": "AZ",
+        "tags": "Running [5K, 10K], Walking",
+        "description": "About This Event Annual Pride Run and Walk, which helps support the LGBT community within the Phoenix metropolitan area and also benefits the Phoenix Pride Scholarship Program, Which helps those i..."
+    },  
+    {
+        "name": "Thanksgiving 5K, Prediction 5K, & Fun Walk", 
+        "location_name": "St. Marys City Visitors Center", 
+        "date": "Nov 23, 2013",
+        "city": "St. Marys City",
+        "state": "MD",
+        "tags": "Running [5K], Walking",
+        "description": "A timed 5K race and a Prediction 5K on a mostly level paved course through scenic St. Mary?s City. Participants of the Prediction 5K will be required to predict their finishing time at race day num..."
+    }
+]

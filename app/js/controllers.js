@@ -2,10 +2,10 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+var eventApp = angular.module('myApp', []);
 
-  }])
-  .controller('MyCtrl2', [function() {
-
-  }]);
+eventApp.controller('EventListCtrl', function EventListCtrl($scope, $http) {
+  $http.get('events/events.json').success(function(data) {
+    $scope.events = data;
+  });
+});

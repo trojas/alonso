@@ -4,17 +4,21 @@
   <meta charset="utf-8">
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
+<body ng-controller="EventListCtrl">
+
+<h1>Events</h1>
+  <ul>
+    <li ng-repeat="event in events">{{event.name}}<br />
+      {{event.location_name}}<br />
+      {{event.date}} | {{event.city}}, {{event.state}}<br />
+      {{event.tags}}<br />
+      <br />
+      {{event.description}}
+    </li>
   </ul>
-
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
+  
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
