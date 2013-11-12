@@ -7,23 +7,30 @@
   <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body ng-controller="EventListCtrl">
-
-<h1>Events</h1>
-  <ul>
-    <li ng-repeat="event in events">{{event.name}}<br />
-      {{event.location_name}}<br />
-      {{event.date}} | {{event.city}}, {{event.state}}<br />
-      {{event.tags}}<br />
-      <br />
-      {{event.description}}
-    </li>
-  </ul>
-  
+<div class="container-fluid">
+  <div class="row-flud">
+    <div class="span2">
+      Search: 
+    </div>
+    <div class="span10">
+      <h1>Events</h1>
+  	  <ul>
+        <li ng-repeat="event in data.events">{{event.name}}<br />
+          {{event.address}}<br />
+          {{event.start_date}} | {{event.city}}, {{event.state}}<br />
+          <a href="{{event.url}}" target="_blank">{{event.url}}</a><br />
+          {{event.description}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>

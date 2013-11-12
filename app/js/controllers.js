@@ -2,10 +2,11 @@
 
 /* Controllers */
 
-var eventApp = angular.module('myApp', []);
-
-eventApp.controller('EventListCtrl', function EventListCtrl($scope, $http) {
-  $http.get('events/events.json').success(function(data) {
-    $scope.events = data;
-  });
-});
+angular.module('myApp.controllers', []).
+  controller('EventListCtrl', ['$scope', 'SennaEvents', function($scope, SennaEvents) {
+    $scope.data = {};
+    
+    SennaEvents.query(function(response) {
+      $scope.data.events = response;
+    });
+  }]);
