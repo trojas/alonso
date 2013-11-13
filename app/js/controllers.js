@@ -2,11 +2,9 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('EventListCtrl', ['$scope', 'SennaEvents', function($scope, SennaEvents) {
-    $scope.data = {};
-    
-    SennaEvents.query(function(response) {
-      $scope.data.events = response;
-    });
-  }]);
+var app = angular.module('myApp.controllers', []);
+
+
+app.controller('EventListCtrl', ['$scope', 'SennaEvents', function ($scope, SennaEvents) {
+	$scope.events = SennaEvents.query();
+}]);
