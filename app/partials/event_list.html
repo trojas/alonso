@@ -1,12 +1,10 @@
 <div class="container-fluid">
   <div class="row-flud">
-    <div class="span2">
-      Search: 
-    </div>
-    <div class="span10">
+    <div class="span8 offset2">
       <h1>Events</h1>
+      Search for an event: <input ng-model="query">
   	  <ul>
-        <li ng-repeat="event in events"><a href="/app/index.html#events/{{event.id}}">{{event.name}}</a><br />
+        <li ng-repeat="event in events | filter:query"><a href="/app/index.html#events/{{event.id}}">{{event.name}}</a><br />
           {{event.address}}<br />
           {{event.start_date}} | {{event.city}}, {{event.state}}<br />
           {{event.description}}
