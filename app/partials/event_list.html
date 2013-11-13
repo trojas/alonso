@@ -3,11 +3,18 @@
     <div class="span8 offset2">
       <h1>Events</h1>
       Search for an event: <input ng-model="query">
-  	  <ul>
-        <li ng-repeat="event in events | filter:query"><a href="/app/index.html#events/{{event.id}}">{{event.name}}</a><br />
-          {{event.address}}<br />
-          {{event.start_date}} | {{event.city}}, {{event.state}}<br />
-          {{event.description}}
+  	  <ul class="unstyled">
+        <li ng-repeat="event in events | filter:query" class="event_list_item">
+          <div class="date">
+            {{event.start_date}}
+          </div>
+          <h5><a href="/app/index.html#events/{{event.id}}">{{event.name}}</a></h5> 
+          <strong>
+            {{event.address}} | {{event.city}}, {{event.state}}
+          </strong>
+          <p>
+            {{event.description}}
+          </p>
         </li>
       </ul>
     </div>

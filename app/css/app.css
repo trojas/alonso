@@ -28,3 +28,35 @@
   content: "";
   padding: 0;
 }
+
+.event_list_item {
+  border-bottom: 1px solid #DDDDDD;
+  list-style: none outside none;
+  padding: 26px 0;
+}
+
+.event_list_item:hover {
+  background:#f5f5f5;
+}
+
+.unstyled {
+  margin-left:0;
+  list-style:none;
+}
+
+h5 a {
+  font-family: Arial,sans-serif;
+  font-size: 18px;
+  line-height: 15px;
+}
+
+.date {
+  color: #444444;
+  font-size: 115%;
+  line-height: 115%;
+  float: right;
+}
+
+.content {
+  padding: 40px 0;
+}
