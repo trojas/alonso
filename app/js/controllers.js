@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-var app = angular.module('myApp.controllers', []);
+var app = angular.module('myApp.controllers', ['google-maps']);
 
 
 app.controller('EventListCtrl', ['$scope', 'SennaEvents', function ($scope, SennaEvents) {
@@ -27,4 +27,12 @@ app.controller('EventDetailsCtrl', ['$scope', '$routeParams', '$http', function 
     	$scope.event = data;
     });
     //$scope.event = event;
+    
+    $scope.center = {
+    	latitude: 32.7150, // initial map center latitude
+		longitude: -117.1625 // initial map center longitude
+    }
+    $scope.markers = []; // an array of markers,
+	$scope.zoom = 8; // the zoom level
+	$scope.fit = true;
 }]);

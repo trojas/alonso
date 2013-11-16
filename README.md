@@ -37,4 +37,8 @@ browser policy, you will need to disable web security in your browser.  You can 
 the Chrome browser in OSx by closing all Chrome windows and executing this command:
 
 		open -a Google\ Chrome --args --disable-web-security
+		
+## Dependencies and other technologies used
 
+1. Google Maps API
+2. [Google Maps for AngularJS](http://nlaplante.github.io/angular-google-maps/)

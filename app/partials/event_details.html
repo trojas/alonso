@@ -1,14 +1,23 @@
 <div class="container-fluid">
-  <div class="span8 offset2">
+  <div class="span10 offset1">
     <div class="content">
       <h1>{{event.name}}</h1>
-      <dl class="dl-horizontal">
-        <dt>Date:</dt>
-        <dd>{{event.start_date}}</dd>
-        <dt>Location:</dt>
-        <dd>{{event.address}} | {{event.city}}, {{event.state}}</dd>
-      </dl>
-      <p>{{event.description}}</p>
+      <div class="row" style="padding-top:20px";>
+      <div class="span4">
+      	<div style="width:200px;height:200px;">
+      		<google-map center="center" draggable="true" zoom="zoom" markers="markers" mark-click="true" style="height: 200px;display:block;"></google-map>
+      	</div>
+      </div>
+      <div class="span6">
+      	<dl class="dl-horizontal">
+        	<dt>Date:</dt>
+        	<dd>{{event.start_date}}</dd>
+        	<dt>Location:</dt>
+        	<dd>{{event.address}} | {{event.city}}, {{event.state}}</dd>
+      	</dl>
+      	<p>{{event.description}}</p>
+      </div>
+      </div>
     </div>
   </div>
 </div>
