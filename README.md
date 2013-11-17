@@ -41,6 +41,11 @@ browser policy, you will need to disable web security in your browser.  You can 
 the Chrome browser in OSx by closing all Chrome windows and executing this command:
 
 		open -a Google\ Chrome --args --disable-web-security
+
+6. Search some events at:
+
+		http://localhost:8000/app/map-page.html#/events
+		
 		
 ## Dependencies and other technologies used
 
