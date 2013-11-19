@@ -28,17 +28,28 @@ to do, feel free to ask anyone else on the project and coordinate efforts.
 		
 2. Fork or clone this repository
 
-3. Start the web server.  From the root folder:
+3. Install the required packages
+
+		npm install
+
+4. Start the web server.  From the root folder:
 
 		./scripts/web-server.js
 
-4. Browse to the (http://localhost:8000/app/index.html).  In order to avoid the same origin
+5. Browse to the (http://localhost:8000/app/index.html).  In order to avoid the same origin
 browser policy, you will need to disable web security in your browser.  You can do this in 
 the Chrome browser in OSx by closing all Chrome windows and executing this command:
 
 		open -a Google\ Chrome --args --disable-web-security
+
+6. Search some events at:
+
+		http://localhost:8000/app/map-page.html#/events
+		
 		
 ## Dependencies and other technologies used
 
 1. Google Maps API
 2. [Google Maps for AngularJS](http://nlaplante.github.io/angular-google-maps/)
+
+
